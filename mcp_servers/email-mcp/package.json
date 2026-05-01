@@ -1,0 +1,30 @@
+{
+  "name": "email-mcp",
+  "version": "1.0.0",
+  "description": "Email MCP Server for Silver Tier - Gmail integration with Claude Code",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js --verbose",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "mcp",
+    "email",
+    "gmail",
+    "claude-code",
+    "silver-tier"
+  ],
+  "author": "Silver Tier Team",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-sdk/mcp": "^0.5.0",
+    "googleapis": "^118.0.0",
+    "google-auth-library": "^9.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "node": ">=18.0.0"
+  }
+}

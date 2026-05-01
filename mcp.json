@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "email-mcp": {
+      "command": "node",
+      "args": ["mcp_servers/email-mcp/index.js"],
+      "env": {
+        "NODE_PATH": "./mcp_servers/email-mcp/node_modules",
+        "DEBUG": "false"
+      },
+      "disabled": false,
+      "autoStart": true,
+      "description": "Email MCP Server - Gmail integration with HITL approval workflow"
+    }
+  },
+  "mcpConfig": {
+    "version": "1.0.0",
+    "name": "Silver Tier MCP Stack",
+    "description": "Model Context Protocol servers for Silver Tier automation",
+    "servers": [
+      {
+        "id": "email-mcp",
+        "name": "Email MCP",
+        "description": "Draft and send emails via Gmail API",
+        "type": "email",
+        "capabilities": ["draft_email", "send_email", "get_email_status"],
+        "requirements": {
+          "credentials": "credentials.json",
+          "scopes": [
+            "https://www.googleapis.com/auth/gmail.modify",
+            "https://www.googleapis.com/auth/gmail.send"
+          ]
+        }
+      }
+    ]
+  },
+  "autoStartServers": ["email-mcp"],
+  "logLevel": "info",
+  "retryPolicy": {
+    "maxRetries": 3,
+    "retryDelay": 1000
+  }
+}

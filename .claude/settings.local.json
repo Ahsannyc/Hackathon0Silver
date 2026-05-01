@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(test:*)",
+      "Bash(echo:*)",
+      "Bash(pm2 logs:*)",
+      "Bash(pip install:*)",
+      "Bash(pm2 delete:*)",
+      "Bash(pm2 start:*)",
+      "Bash(python:*)",
+      "Bash(pm2 list:*)",
+      "Bash(cat:*)",
+      "Bash(pm2 --version:*)",
+      "Bash(pm2 restart:*)",
+      "Bash(tasklist:*)",
+      "Bash(findstr:*)",
+      "Bash(wmic process:*)",
+      "Bash(Get-Process)",
+      "Bash(Select-Object ProcessName -ExpandProperty ProcessName)",
+      "Bash(Select-String -Pattern \"chrome|chromium\")",
+      "Bash(pm2 kill:*)",
+      "Bash(find:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(wc:*)",
+      "Bash(git remote:*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(python3)",
+      "Bash(xargs grep *)",
+      "Bash(git push *)",
+      "Bash(git rebase *)",
+      "Bash(git reset *)",
+      "Bash(git ls-remote *)",
+      "Bash(rm -rf .git)",
+      "Bash(git init *)",
+      "Bash(git config *)"
+    ]
+  }
+}
