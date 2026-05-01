@@ -1,0 +1,74 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+*_token.json
+client_secret_*.json
+secrets.json
+private_key*
+public_key*
+
+# API Keys & Tokens
+.api_key
+.access_token
+.refresh_token
+oauth_token*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+.db
+data.db
+
+# Logs & Temp
+*.log
+logs/
+tmp/
+temp/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Cache
+.cache/
+*.cache
+
+# Sensitive data directories
+session/*/credentials*
+watchers/.gmail_token.json
+watchers/credentials.json
+
+# Browser extensions (potentially sensitive)
+session/*/component_crx_cache/
+session/*/extensions_crx_cache/
